@@ -1,0 +1,12 @@
+llama-cpp-python
+pandas
+langchain
+pdf2image
+pdfminer
+pdfminer.six
+sentence-transformers
+faiss-cpu
+fastapi
+uvicorn
+unstructured
+pydantic
