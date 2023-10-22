@@ -108,12 +108,11 @@ class Input(BaseModel):
     user_id: str
 
 @app.post("/message/")
-def answer_question(input: Input):
+def answer_question(input: Input) -> str:
     print("processing", input.user_id)
     answer = make_answer(input.message)
     print(answer)
-    return {"answer": answer}
-
+    return answer
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8080)
